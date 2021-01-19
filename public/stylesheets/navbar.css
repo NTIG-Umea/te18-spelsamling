@@ -1,0 +1,73 @@
+/* Navbar css */
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 1rem;
+  background-color: rgb(var(--color-light));
+  font-size: 1.25rem; }
+
+/* Making navbar fixed to top */
+.fixed-top {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 1000; }
+
+/* List styles for navigation */
+.nav {
+  list-style: none;
+  display: flex;
+  flex-direction: row; }
+  .nav-item {
+    padding-right: 1rem; }
+  .nav-item:first-child {
+    padding-left: 1rem; }
+
+/* brand */
+.brand {
+  white-space: nowrap; }
+
+/* Nav list anchors */
+a {
+  text-decoration: none; }
+
+.nav-link {
+  color: rgba(var(--color-dark), .5); }
+  .nav-link:hover {
+    color: rgba(var(--color-dark), .75); }
+
+.active {
+  color: rgb(var(--color-dark)); }
+
+/* CSS for dropdown */
+.dropdown {
+  position: relative;
+  display: inline-block; }
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 15rem;
+    box-shadow: 0px 8px 16px 0px rgba(var(--color-dark), 0.2);
+    background-color: rgb(var(--color-light));
+    padding: 0.5rem;
+    z-index: 1010; }
+  .dropdown-item {
+    padding: 0.25rem 0.5rem; }
+  .dropdown:hover .dropdown-content {
+    display: flex;
+    flex-direction: column; }
+
+/* For small screens */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start; }
+  .nav {
+    flex-direction: column; }
+  .nav-item:first-child {
+    padding-left: 0rem; } }
+
+/*# sourceMappingURL=navbar.css.map */

@@ -1,0 +1,22 @@
+$dark: 34,29,28;
+$white: 255,255,255;
+$light: 246,243,246;
+$primary: 236,50,90;
+$secondary: 132,226,150;
+$blue: 53,78,192;
+
+:root 
+{  --color-dark: #{$dark};
+  --color-light: #{$light};
+  --color-white: #{$white};
+  --color-primary: #{$primary};
+  --color-secondary: #{$secondary};
+  --color-blue: #{$blue};
+}
+
+// [data-theme="dark"]
+//   --color-dark: #{$light}
+//   --color-light: #{$dark}
+//   --color-white: #{$dark}
+//   --color-primary: #{$primary}
+//   --color-blue: #{$blue}

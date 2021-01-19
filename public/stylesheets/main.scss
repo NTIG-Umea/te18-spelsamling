@@ -1,0 +1,59 @@
+@import 'colors';
+@import 'fonts';
+@import 'media';
+
+body {
+  line-height: 1.5;
+  font-family: $body;
+  font-weight: 400;
+  color: #{'rgb(var(--color-dark))'};
+  background-color: #{'rgb(var(--color-white))'};
+  flex-direction: column;
+}
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  font-family: $head;
+  color: #{'rgb(var(--color-dark))'};
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem;
+  @include medium {
+    font-size: 4rem;
+  }
+
+  &:hover {
+    color: #{'rgb(var(--color-primary))'};
+  }
+}
+
+h2 {
+  color: #{'rgba(var(--color-dark), 0.8)'};
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: $body;
+  @include medium {
+    font-size: 2rem;
+  }
+}
+
+p {
+  display: block;
+  margin: 0.5rem 0rem;
+}
+
+.lead {
+  color: #{'rgba(var(--color-dark), 0.8)'};
+  font-size: 1.2rem;
+}
+
+a {
+  text-decoration: none;
+  color: #{'rgb(var(--color-dark'};
+  font-weight: 500;
+  &:hover {
+    text-decoration: underline;
+    color: #{'rgb(var(--color-primary))'};
+  }
+}

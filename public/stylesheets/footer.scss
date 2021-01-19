@@ -1,0 +1,18 @@
+@import 'colors';
+
+body {
+  flex-direction: column;
+}
+
+.footer {
+  margin-top: auto;
+  background-color: #{'rgb(var(--color-light))'};
+  padding: 1rem 1rem 1.5rem 1rem;
+}
+
+.cat {
+  fill: #{'rgb(var(--color-dark))'};
+  &:hover {
+    fill: #{'rgb(var(--color-primary))'};
+  }
+}

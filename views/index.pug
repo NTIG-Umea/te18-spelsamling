@@ -1,5 +1,24 @@
 extends layout
 
+mixin li-link(target, text)
+  li
+    a(href=target)= text
+
+block head
+  //- -var title = "Exempel och övningar"
+  //- title Webbutveckling - #{title}
+
+block nav
+  include components/nav.pug
+
 block content
-  h1= title
-  p Welcome to #{title}
+  main.container.pt-3
+    h1.text-caps Spel
+    h2= title
+    p.lead
+      | Intro
+    p.pt-1
+      | Stuff
+
+block footer
+  include components/footer.pug

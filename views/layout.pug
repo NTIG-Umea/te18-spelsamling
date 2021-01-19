@@ -1,7 +1,26 @@
 doctype html
-html
+html.h-100(lang='sv')
   head
-    title= title
-    link(rel='stylesheet', href='/stylesheets/style.css')
-  body
+    meta(charset='UTF-8')
+    meta(name='viewport' content='width=device-width, initial-scale=1.0')
+    meta(http-equiv='X-UA-Compatible' content='ie=edge')
+    link(href='https://fonts.googleapis.com/css2?family=Taviraj:ital@1&family=Work+Sans:wght@400;500;800&display=swap' rel='stylesheet')
+    link(rel="stylesheet", href="https://fonts.googleapis.com/icon?family=Material+Icons")
+
+    link(rel='stylesheet' href='/stylesheets/reset.css')
+    link(rel='stylesheet' href='/stylesheets/helpers.css')
+    link(rel='stylesheet' href='/stylesheets/main.css')
+
+    link(rel='stylesheet' href='stylesheets/footer.css')
+    link(rel='stylesheet', href='stylesheets/navbar.css')
+    link(rel='stylesheet', href='stylesheets/hamburger.css')
+
+    block head
+      title Spelprojekt, ES18,ES19 & TE18 
+
+  body.flex.h-100
+    block nav
     block content
+    block footer
+
+    script(src="javascripts/hamburger.js")

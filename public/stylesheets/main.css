@@ -1,0 +1,56 @@
+:root {
+  --color-dark: 34, 29, 28;
+  --color-light: 246, 243, 246;
+  --color-white: 255, 255, 255;
+  --color-primary: 236, 50, 90;
+  --color-secondary: 132, 226, 150;
+  --color-blue: 53, 78, 192; }
+
+body {
+  line-height: 1.5;
+  font-family: "Work Sans", sans-serif;
+  font-weight: 400;
+  color: rgb(var(--color-dark));
+  background-color: rgb(var(--color-white));
+  flex-direction: column; }
+
+h1 {
+  font-size: 2.4rem;
+  font-weight: 800;
+  font-family: "Work Sans", sans-serif;
+  color: rgb(var(--color-dark));
+  line-height: 1;
+  letter-spacing: 0.2rem;
+  margin-bottom: 1rem; }
+  @media (min-width: 768px) {
+    h1 {
+      font-size: 4rem; } }
+  h1:hover {
+    color: rgb(var(--color-primary)); }
+
+h2 {
+  color: rgba(var(--color-dark), 0.8);
+  font-size: 1.6rem;
+  font-weight: 500;
+  font-family: "Work Sans", sans-serif; }
+  @media (min-width: 768px) {
+    h2 {
+      font-size: 2rem; } }
+
+p {
+  display: block;
+  margin: 0.5rem 0rem; }
+
+.lead {
+  color: rgba(var(--color-dark), 0.8);
+  font-size: 1.2rem; }
+
+a {
+  text-decoration: none;
+  color: rgb(var(--color-dark;
+  font-weight: 500; }
+  a:hover {
+    text-decoration: underline;
+    color: rgb(var(--color-primary)); }
+
+/*# sourceMappingURL=main.css.map */

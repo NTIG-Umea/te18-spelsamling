@@ -1,0 +1,39 @@
+.navbar-toggle {
+  border: none;
+  background-color: transparent;
+}
+
+.collapse {
+  display: block !important;
+  width: 100%;
+}
+
+.navbar-collapse {
+  display: block;
+}
+
+@media (min-width: 768px) {
+  .navbar-toggle {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: left;
+  }
+}
+
+@media (max-width: 768px) {
+  .navbar-collapse {
+    display: none;
+  }
+
+  .navbar {
+    justify-content: space-between;
+    flex-direction: row;
+    align-items: center !important;
+  }
+
+  .nav {
+    flex-direction: column;
+  }
+}

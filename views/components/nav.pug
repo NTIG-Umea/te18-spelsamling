@@ -1,0 +1,39 @@
+mixin nav-link(href, name)
+  if name === title
+    li.nav-item
+      a.nav-link.active(href=href)= name
+  else
+    li.nav-item
+      a.nav-link(href=href)= name
+
+mixin nav-dropdown-link(href, name)
+  li.dropdown-item
+    a.nav-link(href=href)= name
+
+
+block nav
+  nav.navbar
+    a.brand(href='/')
+      svg.nav-icon(xmlns='http://www.w3.org/2000/svg' viewBox='0 0 206.86 182.08' width="48")
+        path(d='M145.67,121.24V62.9H127.52V48.41h50.9V62.9H160.26v58.34Z')
+        path(d='M72.13,121.24H57.55V46.78h3.87L98.25,89.62V48.41h14.68v74.37h-3.87L72.13,81.56Z')
+        path(d='M193,121.24V48.41h14.59v72.83Z')
+        path(d='M79.43,15.4V.8H.72V82.52c0,55.72,28.21,73.53,74.23,98l4.48,2.37V166.35l-.56-.29C37.11,143.75,15.31,129.9,15.31,82.52V15.4Z')
+
+    button.navbar-toggle
+      i.material-icons
+        | menu
+    .navbar-collapse
+      ul.nav
+        +nav-link('/', 'Hem')
+        +nav-link('/about', 'Om')
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href='#') Spel
+          ul.nav.dropdown-content
+            +nav-dropdown-link('/games/1', 'Bunny Bananas')
+            +nav-dropdown-link('/games/2', 'Curly Pirates')
+            +nav-dropdown-link('/games/3', 'Diamond Astronauts ')
+            +nav-dropdown-link('/games/4', 'Furious Fighters')
+            +nav-dropdown-link('/games/5', 'Ghost Stars')
+            +nav-dropdown-link('/games/6', 'Spicy Unicorns')
+            +nav-dropdown-link('/games/7', 'Super Vikings')

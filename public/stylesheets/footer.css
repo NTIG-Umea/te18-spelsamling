@@ -1,0 +1,22 @@
+:root {
+  --color-dark: 34, 29, 28;
+  --color-light: 246, 243, 246;
+  --color-white: 255, 255, 255;
+  --color-primary: 236, 50, 90;
+  --color-secondary: 132, 226, 150;
+  --color-blue: 53, 78, 192; }
+
+body {
+  flex-direction: column; }
+
+.footer {
+  margin-top: auto;
+  background-color: rgb(var(--color-light));
+  padding: 1rem 1rem 1.5rem 1rem; }
+
+.cat {
+  fill: rgb(var(--color-dark)); }
+  .cat:hover {
+    fill: rgb(var(--color-primary)); }
+
+/*# sourceMappingURL=footer.css.map */
