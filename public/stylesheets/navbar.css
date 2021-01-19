@@ -2,7 +2,6 @@
 .navbar {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   padding: 1rem;
   background-color: rgb(var(--color-light));
   font-size: 1.25rem; }
@@ -24,6 +23,10 @@
     padding-right: 1rem; }
   .nav-item:first-child {
     padding-left: 1rem; }
+  .nav-icon {
+    fill: rgb(var(--color-dark)); }
+    .nav-icon:hover {
+      fill: rgb(var(--color-primary)); }
 
 /* brand */
 .brand {

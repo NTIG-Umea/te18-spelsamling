@@ -2,7 +2,6 @@
 .navbar {
   display: flex;
   flex-wrap: wrap;
-  align-items: center;
   padding: 1rem;
   background-color: #{"rgb(var(--color-light))"};
   font-size: 1.25rem;
@@ -29,6 +28,13 @@
 
   &-item:first-child {
     padding-left: 1rem;
+  }
+
+  &-icon {
+    fill: #{'rgb(var(--color-dark))'};
+    &:hover {
+      fill: #{'rgb(var(--color-primary))'};
+    }
   }
 }
 
