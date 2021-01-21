@@ -36,3 +36,19 @@ För att hämta alla hiscore för spelet. Du behöver url och spelid.
 
   console.log(score);
 ```
+
+## Exempel
+
+Kolla implementeringen i public/games/exempel
+
+## Mysql
+
+mysql> describe hiscore;
++--------+-----------------+------+-----+---------+----------------+
+| Field  | Type            | Null | Key | Default | Extra          |
++--------+-----------------+------+-----+---------+----------------+
+| id     | bigint unsigned | NO   | PRI | NULL    | auto_increment |
+| gameid | int unsigned    | NO   |     | NULL    |                |
+| name   | varchar(10)     | NO   |     | NULL    |                |
+| score  | int             | NO   |     | NULL    |                |
++--------+-----------------+------+-----+---------+----------------+
