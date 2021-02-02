@@ -52,3 +52,15 @@ mysql> describe hiscore;
 | name   | varchar(10)     | NO   |     | NULL    |                |
 | score  | int             | NO   |     | NULL    |                |
 +--------+-----------------+------+-----+---------+----------------+
+
+mysql>describe teams;
++---------+--------------+------+-----+---------+----------------+
+| Field   | Type         | Null | Key | Default | Extra          |
++---------+--------------+------+-----+---------+----------------+
+| id      | int unsigned | NO   | PRI | NULL    | auto_increment |
+| name    | varchar(200) | YES  |     | NULL    |                |
+| desc    | text         | YES  |     | NULL    |                |
+| members | text         | YES  |     | NULL    |                |
++---------+--------------+------+-----+---------+----------------+
+
+[SQLdump](te18games.sql)

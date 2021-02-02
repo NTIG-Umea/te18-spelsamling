@@ -1,12 +1,17 @@
 import Axios from 'axios';
 
 export default class Hiscore {
+  // klassen behöver instantieras med en url
+  // för att testa så anv. du localhost
+  // vi kommer behöva en färdig url vid ett senare tillfälle
   constructor (url) {
     this.instance = Axios.create({
       baseURL: url,
     });
   }
 
+  // Använd postscore när spelarens score ska postas
+  // ni kommer att få gameids, troligast gruppnamn
   postScore (gameID, score, name) {
     this.instance.post('/hiscore', {
       id: gameID,
@@ -21,6 +26,7 @@ export default class Hiscore {
     });
   }
 
+  // för att hämta alla hiscores så använder ni getscore
   getScore (gameID) {
     this.instance.get('/hiscore/' + gameID )
     .then(function (response) {
@@ -32,8 +38,5 @@ export default class Hiscore {
       // handle error
       console.log(error);
     })
-    // .then(function () {
-    //   // always executed
-    // });
   }
 }
