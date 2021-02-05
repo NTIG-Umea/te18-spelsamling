@@ -15,8 +15,8 @@ router.get('/:id', async function(req, res, next) {
   try {
     const result = await query(sql, gameId);
     
+    res.status(200);
     res.json({
-      status: 200,
       result
     });
   }
@@ -37,6 +37,9 @@ router.post('/', async function(req, res, next) {
     INSERT INTO hiscore (gameid, name, score) 
     VALUES (?, ?, ?)`;
 
+
+  console.log(req.body);
+
   const score = parseInt(req.body.score);
   const name = req.body.name;
   const gameId = parseInt(req.body.id);
@@ -46,8 +49,8 @@ router.post('/', async function(req, res, next) {
   try {
     await query(sql, gameId, name, score);
     
+    res.status(200);
     res.json({
-      status: 200,
       msg: name + ' score of ' + score + ' posted to ' + gameId
     });
   }
